@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aportar a la Investigación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-audios-page"> 
+
+    <div class="audios-page-container" style="padding-bottom: 0; margin-bottom: 0; min-height: 1200px; display: flex; flex-direction: column; justify-content: space-between;">
+        
+        <div>
+            <header class="main-header-audios" style="margin-bottom: 80px;">
+                <h1>Archivo Sonoro Clasificado</h1>
+                <nav class="nav-menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="audios.html">Audios</a>
+                    <a href="video.html">Videos</a>
+                    <a href="tabla.html">Tablas</a>
+                    <a href="formularios.html">Formularios</a>
+                </nav>
+            </header>
+
+            <div class="form-instruction-container" style="text-align: center; margin-bottom: 90px; font-family: 'Courier Prime', monospace; color: #111; width: 100%; max-width: 750px; margin-left: auto; margin-right: auto; padding: 0 10px;">
+                <h2 style="font-size: 24px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 1px;">Aportar a la Investigacion</h2>
+                <p style="font-size: 20px; font-weight: bold; line-height: 1.6; margin: 0;">Si sabes o tienes algo de info del objetivo mandala aqui</p>
+            </div>
+
+            <form id="investigation-form" action="formularios.html" method="GET" style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 650px; margin: 0 auto 150px auto; box-sizing: border-box; padding: 0 10px;">
+                
+                <div class="form-group" style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 55px;">
+                    <label for="nombre-archivo" style="font-family: 'Courier Prime', monospace; font-size: 23px; font-weight: bold; color: #111; margin-bottom: 18px; text-align: left;">Nombre del Audio/Video:</label>
+                    <input type="text" id="nombre-archivo" name="nombre-archivo" required style="width: 100%; height: 55px; background-color: #dbdbdb; border: none; border-radius: 15px; padding: 10px 20px; font-family: 'Courier Prime', monospace; font-size: 18px; color: #222; box-sizing: border-box; outline: none;">
+                </div>
+
+                <div class="form-group" style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 55px;">
+                    <label for="lugar-archivo" style="font-family: 'Courier Prime', monospace; font-size: 23px; font-weight: bold; color: #111; margin-bottom: 18px; text-align: left;">Lugar:</label>
+                    <input type="text" id="lugar-archivo" name="lugar-archivo" required style="width: 100%; height: 55px; background-color: #dbdbdb; border: none; border-radius: 15px; padding: 10px 20px; font-family: 'Courier Prime', monospace; font-size: 18px; color: #222; box-sizing: border-box; outline: none;">
+                </div>
+
+                <div class="form-group" style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 75px;">
+                    <label for="descripcion-archivo" style="font-family: 'Courier Prime', monospace; font-size: 23px; font-weight: bold; color: #111; margin-bottom: 18px; text-align: left;">Descripción:</label>
+                    <input type="text" id="descripcion-archivo" name="descripcion-archivo" required style="width: 100%; height: 55px; background-color: #dbdbdb; border: none; border-radius: 15px; padding: 10px 20px; font-family: 'Courier Prime', monospace; font-size: 18px; color: #222; box-sizing: border-box; outline: none;">
+                </div>
+
+                <button type="submit" class="btn-enviar-form" style="width: 320px; height: 65px; background-color: #9a665a; border: 3px solid #000000; border-radius: 10px; font-family: 'Courier Prime', monospace; font-size: 26px; font-weight: bold; color: #000000; cursor: pointer; display: flex; justify-content: center; align-items: center; transition: background 0.2s ease; box-shadow: 2px 4px 10px rgba(0,0,0,0.15);">
+                    Enviar
+                </button>
+
+            </form>
+
+            <div id="success-message" style="display: none; text-align: center; margin: -50px auto 100px auto; max-width: 550px; background: #e4d385; padding: 25px; border-radius: 4px; box-shadow: 4px 8px 20px rgba(0,0,0,0.25); border: 2px dashed #9a665a; font-family: 'Courier Prime', monospace; color: #111; transform: rotate(-0.5deg);">
+                <h3 style="margin-top: 0; font-size: 22px; font-weight: bold; color: #9a665a;">¡Informe Recibido!</h3>
+                <p style="font-size: 16px; font-weight: bold; margin-bottom: 0; line-height: 1.4;">Tus datos han sido añadidos al expediente clasificado con éxito. El departamento de investigación procesará las pistas.</p>
+            </div>
+        </div>
+
+        <footer class="site-footer" style="margin-top: 0; margin-bottom: 0; width: calc(100% + 130px); margin-left: -65px; margin-right: -65px;">
+            <div class="footer-content">
+                
+                <div class="footer-column footer-logo">
+                    <img src="Media/Logo sherlock.png" alt="Sherlock Holmes Logo">
+                    <p class="logo-sub">LONDON 1887</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="index.html">Main</a></li>
+                        <li><a href="audios.html">Gallery</a></li> 
+                        <li><a href="videos.html">Projects</a></li>
+                        <li><a href="tablas.html">Certifications</a></li>
+                        <li><a href="formularios.html">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contacts</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <img src="Media/Ubicacion .png" alt="Ubicación" class="contact-img"> 
+                            <span>1234 Bogota calle 78704</span>
+                        </li>
+                        <li>
+                            <img src="Media/Telefono .png" alt="Teléfono" class="contact-img"> 
+                            <span>512.333.2222</span>
+                        </li>
+                        <li>
+                            <img src="Media/Mail.png" alt="Correo" class="contact-img"> 
+                            <span>detectivesherlockmail@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Social Media</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="Media/Facebook.png" alt="Facebook" class="social-img"></a>
+                        <a href="#"><img src="Media/X.png" alt="X" class="social-img"></a>
+                        <a href="#"><img src="Media/Insta.png" alt="Instagram" class="social-img"></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2021 All Rights Reserved</p>
+            </div>
+        </footer>
+
+    </div> 
+
+</body>
+</html>
