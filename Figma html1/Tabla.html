@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control y Registro de Audios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-audios-page"> 
+
+    <div class="audios-page-container" style="padding-bottom: 0; margin-bottom: 0;">
+        
+        <header class="main-header-audios">
+            <h1>Archivo Sonoro Clasificado</h1>
+            <nav class="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="audios.html">Audios</a>
+                <a href="video.html">Videos</a>
+                <a href="tabla.html">Tablas</a>
+                <a href="formularios.html">Formularios</a>
+            </nav>
+        </header>
+
+        <div class="tabla-introduccion" style="width: 100%; max-width: 800px; margin: 0 auto 50px auto; text-align: justify; text-align-last: center; font-family: 'Courier Prime', monospace; font-size: 16px; line-height: 1.8; color: #111; font-weight: bold; padding: 0 20px;">
+            Se diseñó una tabla de control y registro destinada a organizar y sistematizar los audios recopilados en todos los entornos por los que transita el objetivo. En esta tabla se consignan de manera ordenada las interpretaciones realizadas para cada sonido, junto con información complementaria que permite identificar patrones, variaciones y características propias del entorno. El propósito de este registro es facilitar un análisis más profundo, ofreciendo una visión integral que ayude a comprender cómo los diferentes ambientes influyen en la percepción y el desplazamiento del objetivo.
+        </div>
+
+        <div class="documento-tabla-wrapper" style="position: relative; background: #ffffff; padding: 40px; margin-bottom: 80px; box-shadow: 4px 10px 25px rgba(0,0,0,0.15); width: 100%; max-width: 850px; box-sizing: border-box;">
+            
+            <div class="tape-corner tape-tl" style="position: absolute; top: -15px; left: -30px; width: 100px; height: 35px; background: rgba(224, 203, 146, 0.75); transform: rotate(-35deg); box-shadow: 2px 2px 5px rgba(0,0,0,0.1); border-left: 2px dashed rgba(0,0,0,0.05); border-right: 2px dashed rgba(0,0,0,0.05);"></div>
+            <div class="tape-corner tape-tr" style="position: absolute; top: -15px; right: -30px; width: 100px; height: 35px; background: rgba(224, 203, 146, 0.75); transform: rotate(35deg); box-shadow: -2px 2px 5px rgba(0,0,0,0.1); border-left: 2px dashed rgba(0,0,0,0.05); border-right: 2px dashed rgba(0,0,0,0.05);"></div>
+            <div class="tape-corner tape-bl" style="position: absolute; bottom: -15px; left: -30px; width: 100px; height: 35px; background: rgba(224, 203, 146, 0.75); transform: rotate(35deg); box-shadow: 2px -2px 5px rgba(0,0,0,0.1); border-left: 2px dashed rgba(0,0,0,0.05); border-right: 2px dashed rgba(0,0,0,0.05);"></div>
+            <div class="tape-corner tape-br" style="position: absolute; bottom: -15px; right: -30px; width: 100px; height: 35px; background: rgba(224, 203, 146, 0.75); transform: rotate(-35deg); box-shadow: -2px -2px 5px rgba(0,0,0,0.1); border-left: 2px dashed rgba(0,0,0,0.05); border-right: 2px dashed rgba(0,0,0,0.05);"></div>
+
+            <h2 style="font-family: 'Courier Prime', monospace; font-size: 24px; font-weight: bold; color: #111; margin-top: 0; margin-bottom: 25px; text-align: left;">Tabla</h2>
+
+            <div style="overflow-x: auto; width: 100%;">
+                <table style="width: 100%; border-collapse: collapse; font-family: 'Courier Prime', monospace; font-size: 14px; color: #222; text-align: center; border: 1px solid #ccc;">
+                    <thead>
+                        <tr style="background-color: #000000; color: #ffffff;">
+                            <th style="padding: 15px 10px; font-weight: bold; font-size: 14px; border: 1px solid #444; width: 35%;">Nombre del Archivo</th>
+                            <th style="padding: 15px 10px; font-weight: bold; font-size: 14px; border: 1px solid #444; width: 30%;">Lugar</th>
+                            <th style="padding: 15px 10px; font-weight: bold; font-size: 14px; border: 1px solid #444; width: 20%;">Fecha</th>
+                            <th style="padding: 15px 10px; font-weight: bold; font-size: 14px; border: 1px solid #444; width: 15%;">Duración aproximada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Audio Uni terraza.m4a</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Terraza Uni</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">13/03/2026</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">31 s</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Audio Plaza Uni.m4a</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Plaza universidad<br>Bosque</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">17/03/2026</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">31 s</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Audio Baño Uni.m4a</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Baño Uni</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">13/03/2026</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">39 s</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Audio Cuerpo Tos.m4a</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Mi cuarto</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">18/03/2026</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">31 s</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Audio cuerpo palmas.m4a</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">La sala de mi casa</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">18/03/2026</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">31 s</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Audio cuerpo bostezo.m4a</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Mi cuarto</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">18/03/2026</td>
+                            <td style="padding: 12px 8px; border: 1px solid #fff;">30 s</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Audio tecnologia Pc.m4a</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Mi cuarto</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">18/03/2026</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">31 s</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Audio tecnologia ps5.m4a</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Mi cuarto</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">18/03/2026</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">1 m</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Audio tecnologia microondas.m4a</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Cocina de mi casa</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">18/03/2026</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">35 s</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Audio cuidad calle.m4a</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Frente a mi casa</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">18/03/2026</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">34 s</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Audio cuidad calle 2.m4a</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Calle frente a la U</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">18/03/2026</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">33 s</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Audio cuidad calle 3.m4a</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">Autopista de Bogota</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">18/03/2026</td>
+                            <td style="padding: 12px 8px; border: 1px solid #ccc; background: #fff;">31 s</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <footer class="site-footer" style="margin-top: 0; margin-bottom: 0; width: calc(100% + 130px); margin-left: -65px; margin-right: -65px;">
+            <div class="footer-content">
+                
+                <div class="footer-column footer-logo">
+                    <img src="Media/Logo sherlock.png" alt="Sherlock Holmes Logo">
+                    <p class="logo-sub">LONDON 1887</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="index.html">Main</a></li>
+                        <li><a href="audios.html">Gallery</a></li> 
+                        <li><a href="videos.html">Projects</a></li>
+                        <li><a href="tablas.html">Certifications</a></li>
+                        <li><a href="formularios.html">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contacts</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <img src="Media/Ubicacion .png" alt="Ubicación" class="contact-img"> 
+                            <span>1234 Bogota calle 78704</span>
+                        </li>
+                        <li>
+                            <img src="Media/Telefono .png" alt="Teléfono" class="contact-img"> 
+                            <span>512.333.2222</span>
+                        </li>
+                        <li>
+                            <img src="Media/Mail.png" alt="Correo" class="contact-img"> 
+                            <span>detectivesherlockmail@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Social Media</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="Media/Facebook.png" alt="Facebook" class="social-img"></a>
+                        <a href="#"><img src="Media/X.png" alt="X" class="social-img"></a>
+                        <a href="#"><img src="Media/Insta.png" alt="Instagram" class="social-img"></a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2021 All Rights Reserved</p>
+            </div>
+        </footer>
+
+    </div> 
+
+</body>
+</html>
